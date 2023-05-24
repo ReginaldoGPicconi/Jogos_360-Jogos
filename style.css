@@ -1,0 +1,59 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-y: hidden;
+    background-color: #020e26;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    padding: 1em 3em;
+    color:#03045e ;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform:  uppercase;
+    text-shadow: 0 0 0.5em #003566;
+    background-color: #caf0f8;
+    border: 0.25em solid #0077b6 ;
+    border-radius: 10em;
+    box-shadow: 0 0 1em #00b4d8, 0 0 4em 1em #90e0ef, inset 0 0 0.75em 0.25em #caf0f8;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #57cc99;
+    filter: blur(2em);
+    opacity: 0.7;
+    pointer-events: none;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+a:hover{
+    color: rgb(0, 0, 0)
+}
+
+button:hover {
+    color:rgb(0, 0, 0);
+    background-color: #386641;
+    box-shadow: 0 0 1em 0.25em #3a5a40, 0 0 4em 2em #588157, inset 0 0 0.75em 0.25em #606c38;
+}
+
+button:active {
+    box-sizing: 0 0 0.6em 0.25em #38a3a5, 0 0 0.25em #57cc99, inset 0 0 0.5em 0.25em #80ed99;
+}
